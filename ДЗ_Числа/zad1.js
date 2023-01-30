@@ -1,4 +1,5 @@
 //Найти произведение и сумму цифр заданного трехзначного числа.
+"Use strict";
 const number = 999;
 const firstNumber = Math.floor(number / 100);
 const secondNumber = ((number % 100) - ((number % 100) % 10)) / 10;
