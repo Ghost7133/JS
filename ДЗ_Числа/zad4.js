@@ -1,4 +1,5 @@
 //Даны три числа. Найти среднее арифметическое модулей кубов этих чисел и среднее геометрическое их квадратов.
+"Use strict";
 const firstNumber = 9
 const secondNumber = 9
 const thirdNumber = 9
