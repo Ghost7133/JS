@@ -1,3 +1,4 @@
+"use strict";
 const numberA = 13.123456789;
 const numberB = 2.123;
 const accuracy = 5;
