@@ -1,5 +1,5 @@
 //Вычислить дробную часть среднего арифметического двух заданных положительных вещественных чисел.
-"Use strict";
+"use strict";
 const firstNumber =  24.24
 const secondNumber = 12.12
 const average = (firstNumber+secondNumber)/2
