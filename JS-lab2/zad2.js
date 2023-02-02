@@ -1,12 +1,15 @@
 "use strict";
-const Name = "kIrILL";
-const Surname = "YuDIn";
+const _name = "Kirill";
+const surname = "YuDin";
 
-const NameConvert =
-  Name.slice(0, 1).toUpperCase() + Name.slice(1).toLowerCase();
-const SurnameConvert =
-  Surname.slice(0, 1).toUpperCase() + Surname.slice(1).toLowerCase();
-console.log(NameConvert);
-console.log(SurnameConvert);
+const nameConvert = _name[0].toUpperCase() + _name.slice(1).toLowerCase();
+const surnameConvert =
+  surname[0].toUpperCase() + surname.slice(1).toLowerCase();
+console.log(nameConvert);
+console.log(surnameConvert);
 
-Name === NameConvert ? Surname === SurnameConvert ? console.log("Имя осталось без изменений") : console.log("Имя было преобразовано") : console.log("Имя было преобразовано")
+_name === nameConvert
+  ? surname === surnameConvert
+    ? console.log("Имя и фамилия осталось без изменений")
+    : console.log("Фамилия была преобразована")
+  : console.log("Имя было преобразовано");
