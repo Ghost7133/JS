@@ -1,3 +1,4 @@
+"use strict";
 const password = "123456";
 
 password.length > 4
