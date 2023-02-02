@@ -1,4 +1,4 @@
-'use strict";
+"use strict";
 const Name = "kIrILL";
 const Surname = "YuDIn";
 
