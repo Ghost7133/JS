@@ -1,3 +1,4 @@
+"use strict";
 const number = NaN
 console.log(typeof(number));
 
