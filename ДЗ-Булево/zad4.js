@@ -1,3 +1,4 @@
+"use strict";
 const firstNumber = 123
 const secondNumber = NaN
 operation = "%"
