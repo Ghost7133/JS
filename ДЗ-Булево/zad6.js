@@ -1,3 +1,4 @@
+"use strict";
 const firstNumber = 2
 const secondNumber = 1
 const thirdNumber = 4
