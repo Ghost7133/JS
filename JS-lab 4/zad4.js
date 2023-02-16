@@ -11,24 +11,14 @@ const week = [
   "Воскресенье",
 ];
 let day = "Вторник";
-let indexWeek = 0;
-
+let indexWeek = week.indexOf(day);
 for (let i = 1; i <= 31; i++) {
   month.push(i);
 }
-
-for (let i = 0; i < week.length; i++) {
-  if (week[i] == day) {
-    indexWeek = i - 1;
-  }
-  for (let z = 0; z < 31; z++) {
-    if (indexWeek == 6) {
-      indexWeek = i - 1;
-    }
-    indexWeek += 1;
-    console.log(month[z], "Января", week[indexWeek]);
-    if (z == 31) {
-      break;
-    }
+for (let z = 0; z < 31; z++) {
+  const y = (indexWeek + month[z] - 1) % 7 ;
+  console.log(month[z], "Января", week[y]);
+  if (z == 31) {
+    break;
   }
 }
