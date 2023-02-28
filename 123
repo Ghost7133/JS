@@ -1,0 +1,28 @@
+const emails = [
+  "battoufeummipoi-5478@yopmail.com",
+  "quemisseppole-1126@yopmail.com",
+  "wahikotrepo-1057@yopmail.com",
+  "vokequautraunne-9139@yopmail.com",
+  "quarunneppohu-3552@yopmail.com",
+];
+const blacklist = [
+  "wahikotrepo-1057@yopmail.com",
+  "battoufeummipoi-5478@yopmail.com",
+];
+const massive1 = [];
+const massive2 = [];
+function filter(emails, blacklist) {
+  console.log(emails);
+  console.log(blacklist);
+  fun: for (let z = 0; z < blacklist.length; z++) {
+    for (let i = 0; i < emails.length; i++) {
+      if (emails.includes(blacklist[z])) {
+        continue ;
+      } else {
+        massive2.push(emails[i]);
+      }
+      return massive2;
+    }
+  }
+}
+console.log(filter(emails, blacklist));
