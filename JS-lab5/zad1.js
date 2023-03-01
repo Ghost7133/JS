@@ -10,14 +10,12 @@ const blacklist = [
     "wahikotrepo-1057@yopmail.com",
     "battoufeummipoi-5478@yopmail.com"
 ];
-function filter(emails, blacklist) {
-  const filteredEmails = [];
-  emails.forEach((email) => {
-    if (!blacklist.includes(email)) {
-      filteredEmails.push(email);
+function filter(validEmails = [], invalidEmails = []) {
+    const filteredEmails = [];
+    for (let item of validEmails) {
+        if (!invalidEmails.includes(item)) {
+            filteredEmails.push(item);
+        }
     }
-  });
-  
-  return filteredEmails;
-}
+    return filteredEmails;
 console.log(filter(emails,blacklist));
