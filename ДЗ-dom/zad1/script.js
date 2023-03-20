@@ -18,7 +18,7 @@ function createSelectFromArray(optionsArray, selectedValue) {
       if (optionsArray[i].value === selectedValue) {
         selectedIndex = i;
       }
-      select.appendChild(option);
+      select.append(option);
     }
     select.selectedIndex = selectedIndex;
     return select;
