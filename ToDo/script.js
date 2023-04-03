@@ -1,4 +1,4 @@
-function otrisovka(){
+function otrisovka(nazvanie){
     const massiveWork = [];
     //Некоторые элементы для отрисовки
 
@@ -11,7 +11,7 @@ function otrisovka(){
 
         //Основной текст//
         let h1Text = document.createElement(`h1`)
-        h1Text.textContent = `Мой список дел`
+        h1Text.textContent = nazvanie
         allDivText.append(h1Text)
 
 
@@ -55,7 +55,7 @@ function otrisovka(){
         //Ввод//
             //Поле ввода дел//
             let inp = document.createElement(`input`)
-            inp.value = `Введите дело`
+            inp.setAttribute(`placeholder`,`Введите дело`)
             inp.style.width = `200px`
             inp.style.textAlign = `left`
             allDivText.append(inp)
@@ -63,16 +63,19 @@ function otrisovka(){
             //Поле ввода часа//
             let inpHour = document.createElement(`input`)
             inpHour.value = `0`
+            inpHour.setAttribute(`placeholder`,`0`)
             allDivText.append(inpHour)
 
             //Поле ввода минут
             let inpMinute = document.createElement(`input`)
             inpMinute.value = `0`
+            inpMinute.setAttribute(`placeholder`,`0`)
             allDivText.append(inpMinute)
 
             //Поле ввода секунд
             let inpSecond = document.createElement(`input`)
             inpSecond.value = `0`
+            inpSecond.setAttribute(`placeholder`,`0`)
             allDivText.append(inpSecond)
 
         //Кнопка//
@@ -167,4 +170,4 @@ function otrisovka(){
 
 
 }
-otrisovka()
+otrisovka(`Дела`)
