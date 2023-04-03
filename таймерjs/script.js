@@ -19,4 +19,4 @@
       } else {timer = clearInterval(timer)}
     }
 
-    btnStart.addEventListener('click', clickOn);
+    btnStart.addEventListener('click', clickOn);  
