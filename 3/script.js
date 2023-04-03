@@ -1,4 +1,4 @@
-function otrisovka() {
+function otrisovka(nazvanie) {
   const massiveWork = [];
   //Некоторые элементы для отрисовки
 
@@ -11,7 +11,7 @@ function otrisovka() {
 
   //Основной текст//
   let h1Text = document.createElement(`h1`);
-  h1Text.textContent = prompt();
+  h1Text.textContent = nazvanie;
   allDivText.append(h1Text);
 
   //Общее поле ввода//
@@ -162,6 +162,6 @@ function otrisovka() {
   btn.textContent = `Добавить`;
   btn.addEventListener(`click`, createNewElement);
 }
-otrisovka();
-otrisovka();
-otrisovka();
+otrisovka(`1`);
+otrisovka(`2`);
+otrisovka(`3`);
