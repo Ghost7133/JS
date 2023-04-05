@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+}
+
+
+/* Шапка */
+
+.userInputPlace {
+    background-color: #9a3df1;
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+}
+
+
+/* Ввод */
+
+.userInput {
+    margin-right: 3vh;
+    margin-top: 0.6vh;
+    width: 40vh;
+    height: 5vh;
+    font-size: larger;
+    font-weight: 500;
+    background-color: #9a3df1;
+    border-color: #8531d4;
+    color: white;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+}
+
+
+/* Кнопка ввода */
+
+.btnInput {
+    margin-right: 3vh;
+    margin-top: 1vh;
+    width: 10vh;
+    height: 5vh;
+    background-color: #ad73e4;
+    border-color: #ad73e4;
+    color: white;
+}
+
+
+/* Кнопка ввода при наведении */
+
+.btnInput:hover {
+    background-color: #9a3df1;
+}
+
+.hr1 {
+    border: 0;
+    height: 2px;
+    background-color: #4B0082;
+}
+
+.todoList {
+    background-color: #BA55D3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.todoTitle {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    background-color: #BA55D3;
+}
+
+.body {
+    background-color: #BA55D3
+}
+
+
+/* Кнопка удалить все */
+
+.deleteAll {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15%;
+}
+
+
+/* Кнопка удалить все при наведении */
+
+.deleteAll:hover {
+    background-color: #cc0000;
+}
+
+
+/* Кнопка удалить выбранное */
+
+.deleteSelected {
+    background-color: red;
+    color: white;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 15%;
+}
+
+
+/* Кнопка удалить выбранное при наведении */
+
+.deleteSelected:hover {
+    background-color: #cc0000;
+}
+
+
+/* Кнопка удалить сделанные дела */
+
+.deleteReady {
+    background-color: red;
+    color: white;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 15%;
+}
+
+
+/* Кнопка удалить сделанные дела при наведении */
+
+.deleteReady:hover {
+    background-color: #cc0000;
+}
