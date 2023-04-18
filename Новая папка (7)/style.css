@@ -1,0 +1,43 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      margin: 0;
+      padding: 0;
+
+    }
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 50px;
+      background-color: #18191C;
+      color: #FFFFFF;
+      font-family: "Calibri" 
+    }
+
+    table {
+      width: 650px;
+      border-top: 20px solid #ffffff;
+      border-collapse:separate;
+      text-align: center;
+    }
+    td, th {
+      border: 1px solid #ffffff;
+      border-left-width: 0;
+      padding: 14px;
+      vertical-align: top;
+      line-height: 1.2;
+    }
+
+      table {
+        width: 100%;
+      }
+
+      td, th {
+        padding: 10px;
+      }
