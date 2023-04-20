@@ -1,0 +1,32 @@
+-- Active: 1681969551524@@127.0.0.1@3306@asd
+CREATE TABLE section(  
+    id_section int NOT NULL PRIMARY KEY,
+    name_section VARCHAR(20),
+    price int ,
+    surname varchar(20)
+);
+
+CREATE TABLE payment(  
+    id_payment int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    name_payment VARCHAR(20),
+    date DATE,
+    id_section_payment int,
+    id_member_payment int,
+    Foreign Key (id_section_payment) REFERENCES section(id_section)
+);
+
+CREATE TABLE members(
+    id_members int NOT NULL PRIMARY KEY,
+    fio VARCHAR(60),
+    address VARCHAR(50),
+    educational_institution varchar(40),
+    sports_category varchar(30)
+);
+
+SELECT name_section, surname from section;
+
+select fio, name_section from section, members, payment
+WHERE members.id_members = payment.id_member_payment and section.id_section = payment.id_section_payment;
+
+select fio from section, members, payment
+WHERE members.id_members = payment.id_member_payment and section.id_section = payment.id_section_payment and (section.name_section = "плавание" OR section.name_section = "вольная борьба")
