@@ -89,13 +89,3 @@ function out() {
 
 divgreen.addEventListener("mouseover", over);
 divgreen.addEventListener("mouseout", out);
-
-// Задание 8
-
-let selall = document.querySelectorAll(".square");
- selall.forEach(element => element.addEventListener("click", () => {
-     selall.forEach(element => {
-         element.style.backgroundColor = " red"
-     })
-     element.style.backgroundColor = "green"
- }));
