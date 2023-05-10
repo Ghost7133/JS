@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Панель управления студентами</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+	<h1 id="label">Панель управления студентами</h1>
+
+	<div class="form-container">
+		<h2>Добавление нового студента</h2>
+		<form id="add-student-form">
+			<label for="name">Имя:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="surname">Фамилия:</label>
+			<input type="text" id="surname" name="surname" required>
+
+			<label for="patronymic">Отчество:</label>
+			<input type="text" id="secsurname" name="secsurname" required>
+
+			<label for="birthdate">Дата рождения:</label>
+			<input type="date" id="birthdate" name="birthdate" required>
+
+			<label for="start-year">Год начала обучения:</label>
+			<input type="number" id="start-year" name="start-year" required>
+
+			<label for="faculty">Факультет:</label>
+			<input type="text" id="faculty" name="faculty" required>
+
+			<button type="submit">Добавить студента</button>
+		</form>
+
+		<div id="error-messages"></div>
+	</div>
+
+	<div class="table-container">
+		<h2>Список студентов</h2>
+		<table id="students-table">
+			<thead>
+				<tr>
+					<th>ФИО студента</th>
+					<th>Факультет</th>
+					<th>Дата рождения и возраст</th>
+					<th>Годы обучения и номер курса</th>
+				</tr>
+			</thead>
+			<tbody id="students-table-body"></tbody>
+		</table>
+	</div>
+
+	
+</body>
+</html>
