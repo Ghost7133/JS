@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>TODO</title>
+    <meta charset="UTF-8">
+    <script>
+    //    async function get_todos() {
+    //      const url = "http://localhost:3000/api/todos"
+    //      let response = await fetch(url, {
+    //         method: "GET"
+    //      })
+    //      let i = await response.json()
+    //      console.log(i);  
+    //    }
+    //    get_todos()
+
+    //    async function post_todos() {
+    //     const url = "http://localhost:3000/api/todos"
+    //     const data = {
+    //         name: "string",
+    //         owner: "string",
+    //         done: false,
+    //     }
+    //       let response = await fetch(url, {
+    //         method: "POST",
+    //         body: JSON.stringify(data),
+    //         headers: {
+    //             "Content-type": 'application/json'
+    //         }
+    //     })
+    //     const json = await response.json()
+    //     console.log(JSON.stringify(json));
+    //    }
+    //    post_todos()
+
+    //    async function get_id(id) {
+    //     const url = `http://localhost:3000/api/todos/${id}`
+    //     let response = await fetch(url, {
+    //         method: "GET"
+    //     })
+    //     let u = await response.json()
+    //     console.log(u);
+    //    }
+    //    get_id(1652761212592)
+    // async function patch_todo(id) {
+    //     const url = `http://localhost:3000/api/todos/${id}`
+    //     const patch_data = {
+    //         name: "sd,hfkjshdf",
+    //         owner: "string",
+    //         done: false
+    //     }
+    //     let response = await fetch(url, {
+    //         method: "PATCH",
+    //         body: JSON.stringify(patch_data)
+    //     })
+    //     const json = await response.json()
+    //     console.log(JSON.stringify(json));
+    // }
+    // patch_todo(1652761212592)
+
+        async function delete_todo(id) {
+            const url = `http://localhost:3000/api/todos/${id}`
+            const delete_data = {
+                owner:"string",
+                name:"string",
+                done:false,
+                id:"1684821385179"}
+                
+            }
+            let response = await fetch(url, {
+                method: "DELETE",
+                body: JSON.stringify(delete_data)
+            })
+            const data = await response.json()
+            console.log(data);
+        
+        delete_todo(1652761212592)
+    </script>
+</head>
+<script src="index.js"></script>
+<body>
+</body>
+
+</html>
