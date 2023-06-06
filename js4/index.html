@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Simple table</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <button class="trigger">asdasdasda</button>
+    <div class="modalBackground">
+      <div class="modalActive">
+        <form name="inModule">
+          <p class="p">Заполните фамилию</p>
+          <input class="surname" type="text" required />
+          <p class="p">Заполните имя</p>
+          <input class="name" type="text" required />
+          <p class="p">Заполните отчество (если есть)</p>
+          <input class="thirdname" type="text" />
+          <p class="p">Заполните дату рождения</p>
+          <input class="dateOfBirth" type="date" required />
+          <p class="p">Заполните начало обучения</p>
+          <input class="yearOfStart" type="text" required />
+          <p class="p">Заполните факультет</p>
+          <input class="faculty" type="text" required />
+          <button class="btnModalSubmit" type="submit">Отправить</button>
+          <p class="p"></p>
+          <input class="disable" required />
+        </form>
+        <div class="modalClose">
+          <img src="modalCross.png" alt="close" />
+        </div>
+        <div class="modalWindow"></div>
+      </div>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>surname</th>
+          <th>name</th>
+          <th>thirdname</th>
+          <th>date of birth</th>
+          <th>year of start</th>
+          <th>faculty</th>
+        </tr>
+      </thead>
+      <tbody id="body"></tbody>
+    </table>
+  </body>
+</html>
