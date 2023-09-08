@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+div {
+  display: block;
+}
+.header {
+  width: auto;
+  height: 150px;
+  width: 90%;
+  margin-bottom: 10px;
+}
+.img {
+  padding-top: 16px;
+  position: absolute;
+  left: 45%;
+}
+.covButtons {
+  margin-left: auto;
+  display: flex;
+  height: 30px;
+  width: 200px;
+  transform: translateY(45px);
+  justify-content: flex-end;
+  gap: 12px;
+}
+.cart {
+  display: flex;
+}
+.icon {
+  display: flex;
+}
+.liked {
+  display: flex;
+}
+.welcome {
+  margin-top: 70px;
+  justify-content: center;
+  margin-left: 42%;
+}
+.manWomen {
+  margin-left: 11%;
+  height: 364px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.man {
+  display: inline-block;
+  position: relative;
+  width: 700px;
+  height: 360px;
+}
+.woman {
+  width: 700px;
+  height: 360px;
+}
+.sue {
+  position: absolute;
+  display: flex;
+  height: 364px;
+  width: 700px;
+}
+p {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+}
+.shops {
+  margin-top: 20px;
+  margin-left: 11%;
+  width: 1875px;
+  height: 364px;
+  border: 3px solid;
+  border-color: black;
+}
+.textInformation {
+  margin-left: 11%;
+  width: 1875px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 10px;
+  justify-content: center;
+}
+.advantages {
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.firstAdv {
+  width: 310px;
+  height: 40px;
+  display: flex;
+  border: 1px solid;
+  border-color: black;
+}
+.secondAdv {
+  width: 310px;
+  height: 40px;
+  display: flex;
+  border: 1px solid;
+  border-color: black;
+}
+.thirdAdv {
+  width: 310px;
+  height: 40px;
+  display: flex;
+  border: 1px solid;
+  border-color: black;
+}
+.imgadv {
+  width: 25px;
+  height: 25px;
+  fill: none;
+}
