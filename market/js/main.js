@@ -11,6 +11,16 @@ const passErr = document.getElementById(`pass`);
 const logout = document.createElement("button");
 const loggedInUser = document.createElement("span");
 const container = document.querySelector(".container");
+
+class Human {
+  constructor(login, password, checkauth) {
+    this.login = login;
+    this.password = password;
+    this.checkauth = checkauth;
+  }
+}
+const Humanmassive = [];
+
 document.addEventListener("DOMContentLoaded", () => {
   event.preventDefault;
 });
@@ -50,11 +60,18 @@ loginButton.addEventListener("click", function () {
     // Скрываем кнопку "ВОЙТИ"
     authButton.style.display = "none";
 
-    // Закрываем модальное окно
-    modal.style.display = "none";
-    username.value = ``;
-    password.value = ``;
+    Humanmassive.push(
+      new Human(`${username.value}`, `${password.value}`, true)
+    );
+
+    localStorage.setItem(`human`, JSON.stringify(Humanmassive));
+    localStorage.setItem(`login`, JSON.stringify(username.value));
   }
+
+  // Закрываем модальное окно
+  modal.style.display = "none";
+  username.value = ``;
+  password.value = ``;
 });
 
 logout.addEventListener("click", function () {
@@ -66,4 +83,16 @@ logout.addEventListener("click", function () {
 
   // Показываем кнопку "ВОЙТИ"
   authButton.style.display = "block";
+  let check = localStorage.getItem(`human`);
+  console.log(...JSON.parse(check));
 });
+
+function checklogin() {
+  let check = JSON.parse(localStorage.getItem(`login`));
+  let chekingMassive = JSON.parse(localStorage.getItem(`login`));
+
+  for (const check of chekingMassive) {
+    console.log(number);
+  }
+}
+checklogin()
