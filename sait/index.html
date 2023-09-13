@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sait</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="header">
+      <a href="index.html">
+        <img alt="badNorton" src="imgs/logo.svg" class="img" />
+      </a>
+      <div class="covButtons">
+        <div class="cart">
+          <a href="" class="cart">
+            <img src="imgs/free-icon-shopping-cart-1332655.png" alt="cart" />
+          </a>
+        </div>
+        <div class="icon">
+          <span class="iconlogin"> </span>
+          <a href="" class="icon">
+            <img src="imgs/free-icon-avatar-694668.png" alt="icon" />
+          </a>
+        </div>
+        <button class="exit">выход</button>
+        <div class="liked">
+          <a href="" class="liked">
+            <img src="imgs/heart.png" alt="liked" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mainBody">
+      <section class="welcome">
+        <h1>ВЫБЕРИТЕ КАТЕГОРИЮ</h1>
+      </section>
+      <div class="manWomen">
+        <a href="men.html">
+          <div class="man">
+            <img src="imgs/man.png" class="manImg" alt="man" />
+          </div>
+        </a>
+        <a href="women.html">
+          <div class="woman">
+            <img src="imgs/women.png" class="womanImg" alt="woman" />
+          </div>
+        </a>
+      </div>
+
+      <div class="shops">
+        <a href="http://">
+          <img src="imgs/about4.jpg" alt="shopers" class="shop" />
+        </a>
+      </div>
+      <div class="textInformation">
+        <h1>
+          БЛАГОДАРЯ УМЕНИЮ ПРИДАВАТЬ СВЕЖИЙ ОБРАЗ ПРИВЫЧНЫМ ЭЛЕМЕНТАМ ОДЕЖДЫ,<br />
+          ПРЕДАННОСТИ СВОИМ ИДЕЯМ И НЕПРЕРЫВНОМУ РАЗВИТИЮ БРЕНД ЯВЛЯЕТСЯ ОДНИМ
+          ИЗ <br />
+          ЛИДЕРОВ ОТЕЧЕСТВЕННОГО РЫНКА УЛИЧНОЙ МОДЫ.
+        </h1>
+      </div>
+      <div class="advantages">
+        <div class="firstAdv">
+          <img src="imgs/checked.png" alt="checkmark" class="imgadv" />
+          <p1>УНИКАЛЬНЫЙ ДИЗАЙН</p1>
+        </div>
+        <div class="secondAdv">
+          <img src="imgs/checked.png" alt="checkmark" class="imgadv" />
+          <p1> СОБСТВЕННОЕ ПРОИЗВОДСВО</p1>
+        </div>
+        <div class="thirdAdv">
+          <img src="imgs/checked.png" alt="checkmark" class="imgadv" />
+          <p1>ДОСТАВКА ПО ВСЕЙ РОССИИ</p1>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-auth">
+      <div class="modal-dialog modal-dialog-auth">
+        <span class="close-auth">
+          <img src="imgs/free-icon-close-1828774.png" alt="img">
+        </span>
+        <form id="logInForm">
+          <div class="modal-body">
+            <legend class="modal-title">Авторизация</legend>
+            <label class="label-auth">
+              <span>Логин</span>
+              <input id="login" type="text" required/>
+            </label>
+            <label class="label-auth">
+              <span>Пароль</span>
+              <input id="password" type="password" required/>
+            </label>
+          </div>
+          <div class="modal-footer">
+            <div class="footer-buttons">
+              <button class="button button-primary button-login" type="submit"> войти</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal modal-cart">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3 class="modal-title">Корзина</h3>
+          <button class="close">&times;</button>
+        </div>
+        <div class="modal-body">
+          <div class="food-row">
+            <span class="food-name"></span>
+            <strong class="food-price"></strong>
+            <div class="food-counter">
+              <button class="counter-button">-</button>
+              <span class="counter"></span>
+              <button class="counter-button">+</button>
+            </div>
+          </div>
+        <div class="modal-footer">
+          <span class="modal-pricetag"></span>
+          <div class="footer-buttons">
+            <button class="button button-primary">Оформить заказ</button>
+            <button class="button clear-cart">Отмена</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
